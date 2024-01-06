@@ -9,17 +9,19 @@ namespace queens {
 typedef int16_t Row;
 typedef int16_t Column;
 
-struct Position {
-    Row row;
-    Column column;
+void start(const int n);
 
-    Position() : row(0), column(0) {}
-    Position(const Row& row, const Column& column) : row(row), column(column) {}
-    ~Position() {}
-};
+// struct Position {
+//     Row row;
+//     Column column;
 
-using Positions = std::vector<Position>;
+//     Position() : row(0), column(0) {}
+//     Position(const Row& row, const Column& column) : row(row), column(column) {}
+//     ~Position() {}
+// };
 
-Positions getPositions(const int16_t n);  // n - number of queens to be set up
+// using Positions = std::vector<Position>;
+
+// Positions getPositions(const int16_t n);  // n - number of queens to be set up
 
 }  // namespace queens
